@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUERTANET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header"> 
+        <div class="menu container">
+            <a href="#" class="logo">HUERTANET</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="C:\Users\ezequ\Documents\HuertaNet\Correccion\images\menu.png" class="menu-icono" alt="menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu"> 
+                        <img src="images/car.svg" id="img-carrito" alt="carrito de compras">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr> 
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">  <!-- antes 'head-content' -->
+            <div class="header-txt">
+                <span>Ofertas</span>
+                <h1>Bienvenido a la mejor página para ver productos!!</h1>
+                <p>
+                    Bienvenido a HuertaNet, una página diseñada para ofrecer una amplia variedad de productos.
+                    Ofrecemos productos frescos y de alta calidad para todos los gustos. Contamos con una selección de frutas y verduras cuidadosamente elegidas,
+                    ideales para una alimentación saludable y llena de sabor.
+                    También preparamos jugos naturales al momento, refrescantes y llenos de energía,
+                    además de deliciosas hamburguesas elaboradas con ingredientes de calidad que destacan por su sabor único.
+                </p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+            <div class="header-img">
+                <img src="images\rigth.png" alt="imagen decorativa de verduras">  <!-- asumo que es right.png -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Information corregida: ahora tiene la estructura anidada correcta -->
+    <section class="information container">   <!-- clase en minúscula -->
+        <div class="information-content">     <!-- un solo contenedor flex -->
+            <div class="information-1">
+                <img src="images/i1.svg" alt="icono de envío">
+                <h3>Envíos rápidos</h3>
+                <p>Entrega en 24/48 horas</p>
+            </div>
+            <div class="information-1">
+                <img src="images/i2.svg" alt="icono de calidad">
+                <h3>Calidad garantizada</h3>
+                <p>Productos frescos y seleccionados</p>
+            </div>
+            <div class="information-1">
+                <img src="images/i3.svg" alt="icono de ofertas">
+                <h3>Ofertas exclusivas</h3>
+                <p>Descuentos para clientes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ofertas con clase unificada 'ofertas' -->
+    <section class="ofertas container">
+        <div class="ofert-1">
+            <img src="images/f1.png" alt="oferta de producto 1">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+        <div class="ofert-1">
+            <img src="images/f2.png" alt="oferta de producto 2">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+        <div class="ofert-1">
+            <img src="images/f3.png" alt="oferta de producto 3">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+        <div class="ofert-1">
+            <img src="images/f4.png" alt="oferta de producto 4">
+            <h3>Oferta</h3>
+            <p>premium</p>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos destacados</h2>
+        <div class="product-content">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="images/pr1.png" alt="producto 1">
+                <div class="product-txt">
+                    <h3>Producto 1</h3>
+                    <p class="precio">$15.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr2.png" alt="producto 2">
+                <div class="product-txt">
+                    <h3>Producto 2</h3>
+                    <p class="precio">$9.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr3.png" alt="producto 3">
+                <div class="product-txt">
+                    <h3>Producto 3</h3>
+                    <p class="precio">$5.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr4.png" alt="producto 4">
+                <div class="product-txt">
+                    <h3>Producto 4</h3>
+                    <p class="precio">$7.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr5.png" alt="producto 5">
+                <div class="product-txt">
+                    <h3>Producto 5</h3>
+                    <p class="precio">$18.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr6.png" alt="producto 6">
+                <div class="product-txt">
+                    <h3>Producto 6</h3>
+                    <p class="precio">$11.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr7.png" alt="producto 7">
+                <div class="product-txt">
+                    <h3>Producto 7</h3>
+                    <p class="precio">$20.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr8.png" alt="producto 8">
+                <div class="product-txt">
+                    <h3>Producto 8</h3>
+                    <p class="precio">$10.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="service">
+        <div class="service-1">
+            <img class="store" src="images/1.png" alt="imagen de tienda 1">
+        </div>
+        <div class="service-2">
+            <img class="store" src="images/2.png" alt="imagen de tienda 2">
+        </div>
+        <div class="service-3">
+            <img class="store" src="images/3.png" alt="imagen de tienda 3">
+        </div>
+    </section>
+
+    <section class="contact container">
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="submit" class="btn-3" value="Enviar">  <!-- se agregó value -->
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Tiktok</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Idioma</h3>
+                <ul>
+                    <li><a href="#">Español Paraguay</a></li>
+                    <li><a href="#">Ingles USA</a></li>
+                    <li><a href="#">Español España</a></li>
+                    <li><a href="#">Ruso</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Mas info</h3>
+                <ul>
+                    <li><a href="#">Productos premium</a></li>
+                    <li><a href="#">Lista de productos</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Descripcion</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Plataforma de Comunicacion</h3>
+                <ul>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Messenger</a></li>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+    
+    <script src="script.js"></script>  <!-- corregido -->
+</body>
+</html>
