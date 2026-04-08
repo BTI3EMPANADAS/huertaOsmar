@@ -451,3 +451,52 @@ input {
         text-align: center;
     }
 }
+
+/* ========== BOTÓN MODO OSCURO ========== */
+.darkmode-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-modo-oscuro {
+    background: linear-gradient(135deg, #2c5e2d, #1a3a1a);
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-modo-oscuro:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #3a7a3b, #2a4a2a);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-modo-oscuro:active {
+    transform: scale(0.95);
+}
+
+/* Estilo del botón en modo oscuro */
+body.dark-mode .btn-modo-oscuro {
+    background: linear-gradient(135deg, #f0c674, #e0a800);
+    color: #1e2a1e;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-modo-oscuro .icono {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-modo-oscuro:hover .icono {
+    transform: rotate(15deg);
+}
