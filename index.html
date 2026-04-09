@@ -10,17 +10,17 @@
     
     <header class="header"> 
         <div class="menu container">
-            <a href="#" class="logo">HUERTANET</a>
+             <a href="#" class="logo" data-i18n="titulo_principal">HUERTANET</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="C:\Users\ezequ\Documents\HuertaNet\Correccion\images\menu.png" class="menu-icono" alt="menú">
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#" data-i18n="inicio">Inicio</a></li>
+                    <li><a href="#" data-i18n="servicios">Servicios</a></li>
+                    <li><a href="#" data-i18n="productos">Productos</a></li>
+                    <li><a href="#" data-i18n="contactos">Contactos</a></li>
                 </ul>
             </nav>
             <div>
@@ -31,15 +31,15 @@
                             <table id="lista-carrito">
                                 <thead>
                                     <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
+                                        <th data-i18n="imagen">Imagen</th>
+                                        <th data-i18n="nombre">Nombre</th>
+                                        <th data-i18n="precio">Precio</th>
                                         <th></th>
                                     </tr> 
                                 </thead>
                                 <tbody></tbody>
                             </table>
-                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                             <a href="#" id="vaciar-carrito" class="btn-2" data-i18n="vaciar_carrito">Vaciar carrito</a>
                         </div>
                     </li>
                 </ul>
@@ -48,16 +48,11 @@
 
         <div class="header-content container">  <!-- antes 'head-content' -->
             <div class="header-txt">
-                <span>Ofertas</span>
-                <h1>Bienvenido a la mejor página para ver productos!!</h1>
-                <p>
-                    Bienvenido a HuertaNet, una página diseñada para ofrecer una amplia variedad de productos.
-                    Ofrecemos productos frescos y de alta calidad para todos los gustos. Contamos con una selección de frutas y verduras cuidadosamente elegidas,
-                    ideales para una alimentación saludable y llena de sabor.
-                    También preparamos jugos naturales al momento, refrescantes y llenos de energía,
-                    además de deliciosas hamburguesas elaboradas con ingredientes de calidad que destacan por su sabor único.
+                <span data-i18n="ofertas">Ofertas</span>
+                <h1 data-i18n="bienvenido_titulo">Bienvenido a la mejor página para ver productos!!</h1>
+               <p data-i18n="bienvenido_texto"></p>
                 </p>
-                <a href="#" class="btn-1">Información</a>
+                <a href="#" class="btn-1" data-i18n="informacion">Información</a>
             </div>
             <div class="header-img">
                 <img src="images\rigth.png" alt="imagen decorativa de verduras">  <!-- asumo que es right.png -->
@@ -65,7 +60,7 @@
           <div class="darkmode-wrapper">
            <button id="modoOscuroBtn" class="btn-modo-oscuro">
            <span class="icono">🌙</span>
-            <span class="texto">Modo Oscuro</span>
+              <span class="texto" data-i18n="modo_oscuro">Modo Oscuro</span>
            </button>
       
         </div>
@@ -77,18 +72,18 @@
         <div class="information-content">     <!-- un solo contenedor flex -->
             <div class="information-1">
                 <img src="images/i1.svg" alt="icono de envío">
-                <h3>Envíos rápidos</h3>
-                <p>Entrega en 24/48 horas</p>
+                <h3 data-i18n="envios_rapidos">Envíos rápidos</h3>
+                <p data-i18n="envios_texto">Entrega en 24/48 horas</p>
             </div>
             <div class="information-1">
                 <img src="images/i2.svg" alt="icono de calidad">
-                <h3>Calidad garantizada</h3>
-                <p>Productos frescos y seleccionados</p>
+                <h3 data-i18n="calidad_garantizada">Calidad garantizada</h3>
+                <p data-i18n="calidad_texto">Productos frescos y seleccionados</p>
             </div>
             <div class="information-1">
                 <img src="images/i3.svg" alt="icono de ofertas">
-                <h3>Ofertas exclusivas</h3>
-                <p>Descuentos para clientes</p>
+                <h3 data-i18n="ofertas_exclusivas">Ofertas exclusivas</h3>
+                <p data-i18n="ofertas_texto">Descuentos para clientes</p>
             </div>
         </div>
     </section>
@@ -97,36 +92,36 @@
     <section class="ofertas container">
         <div class="ofert-1">
             <img src="images/f1.png" alt="oferta de producto 1">
-            <h3>Oferta</h3>
-            <p>premium</p>
+            <h3 data-i18n="oferta">Oferta</h3>
+            <p data-i18n="premium">premium</p>
         </div>
         <div class="ofert-1">
             <img src="images/f2.png" alt="oferta de producto 2">
-            <h3>Oferta</h3>
-            <p>premium</p>
+            <h3 data-i18n="oferta">Oferta</h3>
+            <p data-i18n="premium">premium</p>
         </div>
         <div class="ofert-1">
             <img src="images/f3.png" alt="oferta de producto 3">
-            <h3>Oferta</h3>
-            <p>premium</p>
+            <h3 data-i18n="oferta">Oferta</h3>
+            <p data-i18n="premium">premium</p>
         </div>
         <div class="ofert-1">
             <img src="images/f4.png" alt="oferta de producto 4">
-            <h3>Oferta</h3>
-            <p>premium</p>
+            <h3 data-i18n="oferta">Oferta</h3>
+            <p data-i18n="premium">premium</p>
         </div>
     </section>
 
     <main class="products container" id="lista-1">
-        <h2>Productos destacados</h2>
+        <h2 data-i18n="productos_destacados">Productos destacados</h2>
         <div class="product-content">
             <!-- Producto 1: Manzana -->
             <div class="product ">
                 <img src="images/pr1.png" alt="Manzana">
                 <div class="product-txt">
-                    <h3>Manzanas</h3>
-                    <p class="precio">500 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                    <h3 data-i18n="producto_manzanas">Manzanas</h3>
+                    <p class="precio" data-i18n="precio_manzanas">500 GS.</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             
@@ -134,63 +129,63 @@
                 <!-- Producto 2: Naranja -->
                 <img src="images/pr2.png" alt="producto 2">
                 <div class="product-txt">
-                    <h3>Naranjas</h3>
-                    <p class="precio">700 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                    <h3 data-i18n="producto_naranjas">Naranjas</h3>
+                    <p class="precio" data-i18n="precio_naranjas">700 GS.</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             <div class="product">
                 <!-- Producto 3: Arandanos -->
                 <img src="images/pr3.png" alt="producto 3">
                 <div class="product-txt">
-                    <h3>Arandanos</h3>
-                    <p class="precio">400 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                 <h3 data-i18n="producto_arandanos">Arandanos</h3>
+                 <p class="precio" data-i18n="precio_arandanos">400 GS.</p>
+                 <a href="#" class="agregar-carrito btn-2" data-id="3" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             <div class="product">
                 <!-- Producto 4: Zarzamoras -->
                 <img src="images/pr4.png" alt="producto 4">
                 <div class="product-txt">
-                    <h3>Zarzamoras</h3>
-                    <p class="precio">900 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                   <h3 data-i18n="producto_zarzamoras">Zarzamoras</h3>
+                    <p class="precio" data-i18n="precio_zarzamoras">900 GS.</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             <div class="product">
                 <!-- Producto 5: Fresas -->
                 <img src="images/pr5.png" alt="producto 5">
                 <div class="product-txt">
-                    <h3>Fresas</h3>
-                    <p class="precio">300 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                    <h3 data-i18n="producto_fresas">Fresas</h3>
+                    <p class="precio" data-i18n="precio_fresas">300 GS.</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             <div class="product">
                 <!-- Producto 6: Bananas -->
                 <img src="images/pr6.png" alt="producto 6">
                 <div class="product-txt">
-                    <h3>Bananas</h3>
-                    <p class="precio">600 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                 <h3 data-i18n="producto_bananas">Bananas</h3>
+                 <p class="precio" data-i18n="precio_bananas">600 GS.</p>
+                 <a href="#" class="agregar-carrito btn-2" data-id="6" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             <div class="product">
                 <!-- Producto 7: Brocoli -->
                 <img src="images/Broccoli_PNG_Clipart-464.png" alt="producto 7">
                 <div class="product-txt">
-                    <h3>Brocoli</h3>
-                    <p class="precio">1.000 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+                    <h3 data-i18n="producto_brocoli">Brocoli</h3>
+                    <p class="precio" data-i18n="precio_brocoli">1.000 GS.</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
             <div class="product">
                 <!-- Producto 8: Espinacas -->
                 <img src="images/pr8.png" alt="producto 8">
                 <div class="product-txt">
-                    <h3>Espinacas</h3>
-                    <p class="precio">1.200 GS.</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+                    <h3 data-i18n="producto_espinacas">Espinacas</h3>
+                    <p class="precio" data-i18n="precio_espinacas">1.200 GS.</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8" data-i18n="agregar">Agregar</a>
                 </div>
             </div>
         </div>
@@ -210,47 +205,47 @@
 
     <section class="contact container">
         <form>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="submit" class="btn-3" value="Enviar">  <!-- se agregó value -->
+            <input type="email" placeholder="Correo electrónico" data-i18n-placeholder="correo_electronico">
+            <input type="submit" class="btn-3" value="Enviar" data-i18n-value="enviar">  <!-- se agregó value -->
         </form>
     </section>
 
     <footer class="footer">
         <div class="footer-content container">
             <div class="link">
-                <h3>Redes Sociales</h3>
+                <h3 data-i18n="redes_sociales">Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Tiktok</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Youtube</a></li>
-                    <li><a href="#">Facebook</a></li>
+                 <li><a href="#" data-i18n="tiktok">Tiktok</a></li>
+                 <li><a href="#" data-i18n="instagram">Instagram</a></li>
+                 <li><a href="#" data-i18n="youtube">Youtube</a></li>
+                 <li><a href="#" data-i18n="facebook">Facebook</a></li>
                 </ul>
             </div>
             <div class="link">
-                <h3>Idioma</h3>
+                <h3 data-i18n="idioma">Idioma</h3>
                 <ul>
-                    <li><a href="#">Español de España</a></li>
-                    <li><a href="#">Ingles USA</a></li>
-                    <li><a href="#">Japones</a></li>
-                    <li><a href="#">Ruso</a></li>
+                    <li><a href="#" data-idioma="es" data-i18n="español">Español de España</a></li>
+                    <li><a href="#" data-idioma="en" data-i18n="ingles">Ingles USA</a></li>
+                    <li><a href="#" data-idioma="ja" data-i18n="japones">Japones</a></li>
+                    <li><a href="#" data-idioma="ru" data-i18n="ruso">Ruso</a></li>
                 </ul>
             </div>
             <div class="link">
-                <h3>Mas info</h3>
+                  <h3 data-i18n="mas_info">Mas info</h3>
                 <ul>
-                    <li><a href="#">Productos premium</a></li>
-                    <li><a href="#">Lista de productos</a></li>
-                    <li><a href="#">Precios</a></li>
-                    <li><a href="#">Descripcion</a></li>
+                  <li><a href="#" data-i18n="productos_premium">Productos premium</a></li>
+                    <li><a href="#" data-i18n="lista_productos">Lista de productos</a></li>
+                    <li><a href="#" data-i18n="precios">Precios</a></li>
+                    <li><a href="#" data-i18n="descripcion">Descripcion</a></li>
                 </ul>
             </div>
             <div class="link">
-                <h3>Plataforma de Comunicacion</h3>
+                  <h3 data-i18n="plataforma_comunicacion">Plataforma de Comunicacion</h3>
                 <ul>
-                    <li><a href="#">Telegram</a></li>
-                    <li><a href="#">Whatsapp</a></li>
-                    <li><a href="#">Discord</a></li>
-                    <li><a href="#">Messenger</a></li>
+                    <li><a href="#" data-i18n="telegram">Telegram</a></li>
+                    <li><a href="#" data-i18n="whatsapp">Whatsapp</a></li>
+                    <li><a href="#" data-i18n="discord">Discord</a></li>
+                    <li><a href="#" data-i18n="messenger">Messenger</a></li>
                 </ul>
             </div>
         </div>    
